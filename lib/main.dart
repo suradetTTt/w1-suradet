@@ -46,7 +46,11 @@ class MyHomePage extends StatelessWidget {
                 children: [
                   Text(
                     "ข้อมูลส่วนตัว",
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                   SizedBox(height: 20),
                   Container(
@@ -66,8 +70,18 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20),
-                  Text("Suradet Damrongpanjawong", style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
-                  Text("Suradet.damrongpanjawong@e-tech.ac.th"),
+                  Text(
+                    "Suradet Damrongpanjawong",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text(
+                    "Suradet.damrongpanjawong@e-tech.ac.th",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ],
               ),
             ),
@@ -78,11 +92,14 @@ class MyHomePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("บ้อมูลส่วนตัว", style: TextStyle(fontSize:23, fontWeight: FontWeight.bold),),
+                  Text(
+                    "ข้อมูลส่วนตัว",
+                    style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+                  ),
                   SizedBox(height: 20),
                   Row(
                     children: [
-                      SizedBox(width: 20,),
+                      SizedBox(width: 20),
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
@@ -97,17 +114,24 @@ class MyHomePage extends StatelessWidget {
                         children: [
                           Text("เบอร์โทรศัพ"),
                           SizedBox(height: 5),
-                          Text("111-111-1111", style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                          Text(
+                            "111-111-1111",
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       ),
                     ],
                   ),
 
-                  SizedBox(height: 20,),
+                  SizedBox(height: 20),
 
                   Row(
                     children: [
-                      SizedBox(width: 20,),
+                      SizedBox(width: 20),
+
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
@@ -116,23 +140,30 @@ class MyHomePage extends StatelessWidget {
                         ),
                         child: Icon(Icons.cake, color: Colors.red),
                       ),
+
                       SizedBox(width: 20),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("วันเกิด"),
                           SizedBox(height: 5),
-                          Text("06 สุรเดช 2548", style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                          Text(
+                            "06 สุรเดช 2548",
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       ),
                     ],
                   ),
 
-                  SizedBox(height: 20,),
+                  SizedBox(height: 20),
 
                   Row(
                     children: [
-                      SizedBox(width: 20,),
+                      SizedBox(width: 20),
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
@@ -147,17 +178,23 @@ class MyHomePage extends StatelessWidget {
                         children: [
                           Text("ที่อยู่"),
                           SizedBox(height: 5),
-                          Text("ชลบุรี", style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                          Text(
+                            "ชลบุรี",
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       ),
                     ],
                   ),
 
-                  SizedBox(height: 20,),
+                  SizedBox(height: 20),
 
                   Row(
                     children: [
-                      SizedBox(width: 20,),
+                      SizedBox(width: 20),
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
@@ -172,24 +209,30 @@ class MyHomePage extends StatelessWidget {
                         children: [
                           Text("การศึกษา"),
                           SizedBox(height: 5),
-                          Text("วิทยาลัยเทคโนโลยีภาคตะวันออก(อี.เทค)", style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                          Text(
+                            "วิทยาลัยเทคโนโลยีภาคตะวันออก(อี.เทค)",
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       ),
                     ],
                   ),
 
-                  SizedBox(height: 20,),
+                  SizedBox(height: 20),
                   Container(
                     width: 400,
                     child: ElevatedButton(
-                    onPressed: () => Navigator.pushNamed(context, '/second'),
-                    child: Text('ไปยังหน้าที่ 2'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      foregroundColor: Colors.white,
+                      onPressed: () => Navigator.pushNamed(context, '/second'),
+                      child: Text('ไปยังหน้าที่ 2'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
+                        foregroundColor: Colors.white,
+                      ),
                     ),
-                  ),)
-
+                  ),
                 ],
               ),
             ),
@@ -246,7 +289,13 @@ class SecondPage extends StatelessWidget {
                   Row(
                     children: [
                       SizedBox(width: 30),
-                      Text('Suradet_damrongpanjawong', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                      Text(
+                        'Suradet_damrongpanjawong',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       SizedBox(width: 10),
                       Container(child: Icon(Icons.check_circle)),
                     ],
@@ -286,11 +335,11 @@ class SecondPage extends StatelessWidget {
                     ],
                   ),
 
-                  SizedBox(height: 30,),
+                  SizedBox(height: 30),
 
                   Row(
                     children: [
-                      SizedBox(width: 10,),
+                      SizedBox(width: 10),
                       Image.network(
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfjVfIKWXU3eIIG5hbZx-LizJHKRKN99fDDA&s",
                         width: 190,
@@ -298,7 +347,7 @@ class SecondPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
 
-                      SizedBox(width: 10,),
+                      SizedBox(width: 10),
                       Image.network(
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfjVfIKWXU3eIIG5hbZx-LizJHKRKN99fDDA&s",
                         width: 190,
