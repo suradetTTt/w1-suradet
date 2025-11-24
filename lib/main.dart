@@ -46,13 +46,13 @@ class MyHomePage extends StatelessWidget {
                 children: [
                   Text(
                     "ข้อมูลส่วนตัว",
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 20),
                   Container(
                     padding: EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.white,
                       shape: BoxShape.circle,
                     ),
 
@@ -66,7 +66,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20),
-                  Text("Suradet Damrongpanjawong"),
+                  Text("Suradet Damrongpanjawong", style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
                   Text("Suradet.damrongpanjawong@e-tech.ac.th"),
                 ],
               ),
@@ -78,7 +78,7 @@ class MyHomePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("บ้อมูลส่วนตัว"),
+                  Text("บ้อมูลส่วนตัว", style: TextStyle(fontSize:23, fontWeight: FontWeight.bold),),
                   SizedBox(height: 20),
                   Row(
                     children: [
@@ -93,10 +93,11 @@ class MyHomePage extends StatelessWidget {
                       ),
                       SizedBox(width: 20),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("เบอร์โทรศัพ"),
                           SizedBox(height: 5),
-                          Text("111-111-1111"),
+                          Text("111-111-1111", style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
                         ],
                       ),
                     ],
@@ -110,17 +111,18 @@ class MyHomePage extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                          color: Colors.lightGreenAccent,
+                          color: Colors.red[100],
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Icon(Icons.phone, color: Colors.green),
+                        child: Icon(Icons.cake, color: Colors.red),
                       ),
                       SizedBox(width: 20),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("เบอร์โทรศัพ"),
+                          Text("วันเกิด"),
                           SizedBox(height: 5),
-                          Text("111-111-1111"),
+                          Text("06 สุรเดช 2548", style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
                         ],
                       ),
                     ],
@@ -134,17 +136,18 @@ class MyHomePage extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                          color: Colors.lightGreenAccent,
+                          color: Colors.orange[100],
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Icon(Icons.phone, color: Colors.green),
+                        child: Icon(Icons.pin_drop, color: Colors.orange),
                       ),
                       SizedBox(width: 20),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("เบอร์โทรศัพ"),
+                          Text("ที่อยู่"),
                           SizedBox(height: 5),
-                          Text("111-111-1111"),
+                          Text("ชลบุรี", style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
                         ],
                       ),
                     ],
@@ -158,30 +161,35 @@ class MyHomePage extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                          color: Colors.lightGreenAccent,
+                          color: Colors.purple[100],
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Icon(Icons.phone, color: Colors.green),
+                        child: Icon(Icons.school, color: Colors.purple),
                       ),
                       SizedBox(width: 20),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("เบอร์โทรศัพ"),
+                          Text("การศึกษา"),
                           SizedBox(height: 5),
-                          Text("111-111-1111"),
+                          Text("วิทยาลัยเทคโนโลยีภาคตะวันออก(อี.เทค)", style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
                         ],
                       ),
                     ],
                   ),
 
-                  ElevatedButton(
+                  SizedBox(height: 20,),
+                  Container(
+                    width: 400,
+                    child: ElevatedButton(
                     onPressed: () => Navigator.pushNamed(context, '/second'),
-                    child: Text('หน้าสอง'),
+                    child: Text('ไปยังหน้าที่ 2'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue,
                       foregroundColor: Colors.white,
                     ),
-                  ),
+                  ),)
+
                 ],
               ),
             ),
@@ -238,8 +246,8 @@ class SecondPage extends StatelessWidget {
                   Row(
                     children: [
                       SizedBox(width: 30),
-                      Text('Suradet_damrongpanjawong'),
-                      SizedBox(width: 30),
+                      Text('Suradet_damrongpanjawong', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                      SizedBox(width: 10),
                       Container(child: Icon(Icons.check_circle)),
                     ],
                   ),
